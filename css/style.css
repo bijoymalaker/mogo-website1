@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    
+} 
+
+:root {
+    --font-white: #ffffff;
+    --hover-color: #f7cb88;
+    --sec-bg: #95e1d3;
+    --comment-bg: #f8f8f8;
+}
+
+/* header part start  */
+.header{
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav-hover{
+    color: var(--font-white);
+    transition: 0.2s linear;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -ms-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+}
+.nav-hover:hover{
+    border-bottom: 1px solid var(--hover-color);
+    color: var(--hover-color);
+}
+/* header part end  */
+
+/* banner part start  */
+.banner-part{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-header h2{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 72px;
+}
+.banner-header h1{
+    font-size: 100px;
+    font-weight: bold;
+    position: relative;
+}
+.banner-header h1::before{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: var(--font-white);
+    top: 260px;
+    left: 0px;
+}
+
+/* banner part end  */
+
+/* about us part start  */
+.caption-manual h4{
+    font-family: 'Kaushan Script', cursive;
+}
+.caption-manual h2{
+    font-weight: 700;
+}
+.caption-manual h2 span{
+    position: relative;
+}
+.caption-manual h2 span::before{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: #f38181;
+    top: 50px;
+    left: -149px;
+}
+.img-con{
+    box-shadow: 10px 10px var(--sec-bg);
+}
+/* about us part end */
+
+/* counter part start  */
+.counter-part{
+    background-color: var(--sec-bg);
+    color: var(--font-white);
+}
+.counter-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.counter-details>*{
+    border-left: 1px solid var(--font-white);
+    /* border-right: 1px solid var(--font-white); */
+    padding: 20px 10px;
+}
+/* counter part end  */
+
+/* service part start  */
+#service i, #service-comment i, #services i{
+    color: var(--sec-bg);
+}
+/* service part end  */
+
+/* design part start  */
+#design-part{
+    background-image: url(../images/device1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* design part end  */
+/* services part start  */
+
+/* services part end  */
+
+/* service comment part start */
+#service-comment{
+    background-color: var(--comment-bg);
+}
+
+/* service comment part end */
